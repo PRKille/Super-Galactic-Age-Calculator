@@ -12,14 +12,14 @@ describe('Astronaut', () => {
   });
 
   test("should determine age on Mercury based on year length of .24 earth years", ()=>{
-    colonist.addAge(20)
+    colonist.addAge(25)
     colonist.ageMerc();
-    expect(colonist.mercuryAge).toBeCloseTo(83.33, 2)
+    expect(colonist.mercuryAge).toBe(104.17)
   });
 
   test("should determine age on Venus based on year length of .62 earth years", ()=>{
     colonist.addAge(20)
     colonist.ageVen();
-    expect(colonist.venusAge).toBeCloseTo(32.25, 2)
+    expect(colonist.venusAge).toBe(32.26)
   });
 });

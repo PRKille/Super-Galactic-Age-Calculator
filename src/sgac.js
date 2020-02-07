@@ -14,11 +14,13 @@ export class Astronaut {
   }
 
   ageMerc(){
-    this.mercuryAge = this.age/.24;
+    let newAge = this.age/.24
+    this.mercuryAge = parseFloat(newAge.toFixed(2));
   }
   
   ageVen(){
-    
+    let newAge = this.age/.62;
+    this.venusAge = parseFloat(newAge.toFixed(2));
   }
   //ageMars
   //ageJup
