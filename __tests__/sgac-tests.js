@@ -8,6 +8,6 @@ describe('Astronaut', () => {
 
   test("should update age paramater based on user input", ()=>{
     colonist.addAge(20);
-    expect(colonist.age.toBe(20))
+    expect(colonist.age).toBe(20);
   });
 });

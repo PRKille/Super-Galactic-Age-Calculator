@@ -10,7 +10,8 @@ export class Astronaut {
   }
 
   //ageupdate
-  addAge(){
+  addAge(age){
+    this.age = age;
   }
   //ageMerc
   //ageVen
