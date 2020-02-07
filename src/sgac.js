@@ -14,7 +14,7 @@ export class Astronaut {
   }
 
   ageMerc() {
-    let newAge = this.age/.24
+    let newAge = this.age/.24;
     this.mercuryAge = parseFloat(newAge.toFixed(2));
   }
   
