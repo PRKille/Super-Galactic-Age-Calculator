@@ -60,7 +60,7 @@ describe('Astronaut', () => {
     expect(tempAge).toEqual([40,83.34,32.26,10.64,1.68]);
   });
 
-  test("should return number of bonus year over life expectancy", ()=>{
+  test("should return number of bonus years over life expectancy", ()=>{
     let tempAge = [];
     colonist.addAge(70);
     colonist.ageMerc();
