@@ -72,7 +72,13 @@ export class Astronaut {
   }
 
   planetRemain() {
-    return [];
+    const {expectAge, mercuryAge, venusAge, marsAge, jupiterAge} = this;
+    let mercDeath = parseFloat(((expectAge/.24)-mercuryAge).toFixed(2));
+    let venDeath = parseFloat(((expectAge/.62)-venusAge).toFixed(2));
+    let marsDeath = parseFloat(((expectAge/1.88)-marsAge).toFixed(2));
+    let jupDeath = parseFloat(((expectAge/11.86)-jupiterAge).toFixed(2));
+    let deathArray = [mercDeath,venDeath,marsDeath,jupDeath];
+    return deathArray;
   }
   //bonusYears
 }

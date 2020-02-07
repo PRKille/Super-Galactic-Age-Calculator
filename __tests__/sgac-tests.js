@@ -49,10 +49,14 @@ describe('Astronaut', () => {
 
   test("should return remaining life in Mercury years", ()=> {
     let tempAge = [];
-    colonist.addAge(20); 
+    colonist.addAge(20);
+    colonist.ageMerc();
+    colonist.ageVen();
+    colonist.ageMars();
+    colonist.ageJup();
     colonist.addDemo("male", "AF");
     colonist.lifeRemain();
     tempAge = colonist.planetRemain();
-    expect(tempAge).toBe([83.34,32.26,10.64,1.68]);
+    expect(tempAge).toEqual([83.34,32.26,10.64,1.68]);
   })
 });
