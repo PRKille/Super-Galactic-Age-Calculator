@@ -14,7 +14,7 @@ export class Astronaut {
   }
 
   ageMerc(){
-    
+    this.mercuryAge = this.age/.24;
   }
   //ageVen
   //ageMars
