@@ -40,14 +40,14 @@ describe('Astronaut', () => {
     expect(colonist.demo).toEqual(["female", "NA"])
   });
 
-  test("should return how many years a user has left to live based on basic demographic information", ()=> { 
+  test("should return user life expectancy based on basic demographic information", ()=> { 
     colonist.addAge(20); 
     colonist.addDemo("male", "AF");
-    colonist.lifeRemain();
-    expect(colonist.expectAge).toBe(40);
+    colonist.lifeExpect();
+    expect(colonist.expectAge).toBe(60);
   });
 
-  test("should return remaining life in Mercury years", ()=> {
+  test("should return remaining life on planets in respective years", ()=> {
     let tempAge = [];
     colonist.addAge(20);
     colonist.ageMerc();
@@ -55,8 +55,8 @@ describe('Astronaut', () => {
     colonist.ageMars();
     colonist.ageJup();
     colonist.addDemo("male", "AF");
-    colonist.lifeRemain();
+    colonist.lifeExpect();
     tempAge = colonist.planetRemain();
-    expect(tempAge).toEqual([83.34,32.26,10.64,1.68]);
+    expect(tempAge).toEqual([40,83.34,32.26,10.64,1.68]);
   })
 });

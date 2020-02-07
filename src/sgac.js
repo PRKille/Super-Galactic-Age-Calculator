@@ -38,46 +38,47 @@ export class Astronaut {
     this.demo.push(continent);
   }
 
-  lifeRemain(){
+  lifeExpect(){
     let demo = this.demo;
     if (demo[0] === "female") {
       if (demo[1] === "NA") {
-        this.expectAge = 84 - this.age;
+        this.expectAge = 84;
       } else if (demo[1] === "SA") {
-        this.expectAge = 78 - this.age;
+        this.expectAge = 78;
       } else if (demo[1] === "E") {
-        this.expectAge = 83 - this.age;
+        this.expectAge = 83;
       } else if (demo[1] === "A") {
-        this.expectAge = 75 - this.age;
+        this.expectAge = 75;
       } else if (demo[1] === "AF") {
-        this.expectAge = 62 - this.age;
+        this.expectAge = 62;
       } else if (demo[1] === "AU") {
-        this.expectAge = 85 - this.age;
+        this.expectAge = 85;
       }
     } else if (demo[0] === "male") {
       if (demo[1] === "NA") {
-        this.expectAge = 79 - this.age;
+        this.expectAge = 79;
       } else if (demo[1] === "SA") {
-        this.expectAge = 72 - this.age;
+        this.expectAge = 72;
       } else if (demo[1] === "E") {
-        this.expectAge = 75 - this.age;
+        this.expectAge = 75;
       } else if (demo[1] === "A") {
-        this.expectAge = 65 - this.age;
+        this.expectAge = 65;
       } else if (demo[1] === "AF") {
-        this.expectAge = 60 - this.age;
+        this.expectAge = 60;
       } else if (demo[1] === "AU") {
-        this.expectAge = 83 - this.age;
+        this.expectAge = 83;
       }
     }
   }
 
   planetRemain() {
     const {expectAge, mercuryAge, venusAge, marsAge, jupiterAge} = this;
-    let mercDeath = parseFloat(((expectAge/.24)-mercuryAge).toFixed(2));
-    let venDeath = parseFloat(((expectAge/.62)-venusAge).toFixed(2));
-    let marsDeath = parseFloat(((expectAge/1.88)-marsAge).toFixed(2));
-    let jupDeath = parseFloat(((expectAge/11.86)-jupiterAge).toFixed(2));
-    let deathArray = [mercDeath,venDeath,marsDeath,jupDeath];
+    let earthDeath = expectAge - this.age;
+    let mercDeath = parseFloat(((earthDeath/.24)-mercuryAge).toFixed(2));
+    let venDeath = parseFloat(((earthDeath/.62)-venusAge).toFixed(2));
+    let marsDeath = parseFloat(((earthDeath/1.88)-marsAge).toFixed(2));
+    let jupDeath = parseFloat(((earthDeath/11.86)-jupiterAge).toFixed(2));
+    let deathArray = [earthDeath, mercDeath,venDeath,marsDeath,jupDeath];
     return deathArray;
   }
   //bonusYears
