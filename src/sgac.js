@@ -39,7 +39,36 @@ export class Astronaut {
   }
 
   lifeRemain(){
-
+    let demo = this.demo;
+    if (demo[0] === "female") {
+      if (demo[1] === "NA") {
+        this.expectAge = 84 - this.age;
+      } else if (demo[1] === "SA") {
+        this.expectAge = 78 - this.age;
+      } else if (demo[1] === "E") {
+        this.expectAge = 83 - this.age;
+      } else if (demo[1] === "A") {
+        this.expectAge = 75 - this.age;
+      } else if (demo[1] === "AF") {
+        this.expectAge = 62 - this.age;
+      } else if (demo[1] === "AU") {
+        this.expectAge = 85 - this.age;
+      }
+    } else if (demo[0] === "male") {
+      if (demo[1] === "NA") {
+        this.expectAge = 79 - this.age;
+      } else if (demo[1] === "SA") {
+        this.expectAge = 72 - this.age;
+      } else if (demo[1] === "E") {
+        this.expectAge = 75 - this.age;
+      } else if (demo[1] === "A") {
+        this.expectAge = 65 - this.age;
+      } else if (demo[1] === "AF") {
+        this.expectAge = 60 - this.age;
+      } else if (demo[1] === "AU") {
+        this.expectAge = 83 - this.age;
+      }
+    }
   }
   //bonusYears
 }
