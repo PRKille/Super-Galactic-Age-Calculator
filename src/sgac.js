@@ -9,11 +9,13 @@ export class Astronaut {
     this.expectAge = 0;
   }
 
-  //ageupdate
   addAge(age){
     this.age = age;
   }
-  //ageMerc
+
+  ageMerc(){
+    
+  }
   //ageVen
   //ageMars
   //ageJup
