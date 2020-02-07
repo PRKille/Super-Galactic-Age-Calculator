@@ -10,11 +10,12 @@ export class Astronaut {
   }
 
   //ageupdate
+  addAge(){
+  }
   //ageMerc
   //ageVen
   //ageMars
   //ageJup
   //lifeRemain
   //bonusYears
-
 }
