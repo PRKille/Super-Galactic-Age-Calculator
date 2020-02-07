@@ -26,6 +26,6 @@ describe('Astronaut', () => {
   test("should determine age on Mars based on year length of 1.88 earth years", ()=>{
     colonist.addAge(20)
     colonist.ageMars();
-    expect(colonist.venusAge).toBe(10.64)
+    expect(colonist.marsAge).toBe(10.64)
   });
 });
