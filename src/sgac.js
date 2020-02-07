@@ -83,8 +83,7 @@ export class Astronaut {
   }
 
   bonusYears() {
-    const {expectAge, mercuryAge, venusAge, marsAge, jupiterAge} = this;
-    let earthBonus = this.age - expectAge;
+    let earthBonus = this.age - this.expectAge;
     let mercBonus = parseFloat((earthBonus/.24).toFixed(2));
     let venBonus = parseFloat((earthBonus/.62).toFixed(2));
     let marsBonus = parseFloat((earthBonus/1.88).toFixed(2));
