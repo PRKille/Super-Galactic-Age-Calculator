@@ -28,4 +28,10 @@ describe('Astronaut', () => {
     colonist.ageMars();
     expect(colonist.marsAge).toBe(10.64)
   });
+
+  test("should determine age on Jupiter based on year length of 11.86 earth years", ()=>{
+    colonist.addAge(20)
+    colonist.ageJup();
+    expect(colonist.jupiterAge).toBe(1.69)
+  });
 });
