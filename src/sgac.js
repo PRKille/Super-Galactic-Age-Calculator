@@ -22,7 +22,10 @@ export class Astronaut {
     let newAge = this.age/.62;
     this.venusAge = parseFloat(newAge.toFixed(2));
   }
-  //ageMars
+
+  ageMars(){
+    
+  }
   //ageJup
   //lifeRemain
   //bonusYears
