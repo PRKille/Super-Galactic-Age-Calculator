@@ -81,5 +81,8 @@ export class Astronaut {
     let deathArray = [earthDeath, mercDeath,venDeath,marsDeath,jupDeath];
     return deathArray;
   }
-  //bonusYears
+
+  bonusYears() {
+    
+  }
 }

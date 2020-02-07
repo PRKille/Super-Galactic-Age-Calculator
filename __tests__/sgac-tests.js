@@ -58,5 +58,18 @@ describe('Astronaut', () => {
     colonist.lifeExpect();
     tempAge = colonist.planetRemain();
     expect(tempAge).toEqual([40,83.34,32.26,10.64,1.68]);
-  })
+  });
+
+  test("should return number of bonus year over life expectancy", ()=>{
+    let tempAge = [];
+    colonist.addAge(70);
+    colonist.ageMerc();
+    colonist.ageVen();
+    colonist.ageMars();
+    colonist.ageJup();
+    colonist.addDemo("male", "AF");
+    colonist.lifeExpect();
+    tempAge = colonist.bonusYears();
+    expect(tempAge).toEqual([10,41.67,16.13,5.32,.84])
+  });
 });
