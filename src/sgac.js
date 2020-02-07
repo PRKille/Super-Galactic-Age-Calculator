@@ -9,34 +9,37 @@ export class Astronaut {
     this.expectAge = 0;
   }
 
-  addAge(age){
+  addAge(age) {
     this.age = age;
   }
 
-  ageMerc(){
+  ageMerc() {
     let newAge = this.age/.24
     this.mercuryAge = parseFloat(newAge.toFixed(2));
   }
   
-  ageVen(){
+  ageVen() {
     let newAge = this.age/.62;
     this.venusAge = parseFloat(newAge.toFixed(2));
   }
 
-  ageMars(){
+  ageMars() {
     let newAge = this.age/1.88;
     this.marsAge = parseFloat(newAge.toFixed(2));
   }
 
-  ageJup(){
+  ageJup() {
     let newAge = this.age/11.86;
     this.jupiterAge = parseFloat(newAge.toFixed(2));
   }
 
-  addDemo(sex, continent){
+  addDemo(sex, continent) {
     this.demo.push(sex);
     this.demo.push(continent);
   }
-  //lifeRemain
+
+  lifeRemain(){
+
+  }
   //bonusYears
 }
