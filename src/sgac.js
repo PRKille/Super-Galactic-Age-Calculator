@@ -70,5 +70,9 @@ export class Astronaut {
       }
     }
   }
+
+  planetRemain() {
+    return [];
+  }
   //bonusYears
 }

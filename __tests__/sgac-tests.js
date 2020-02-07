@@ -12,9 +12,9 @@ describe('Astronaut', () => {
   });
 
   test("should determine age on Mercury based on year length of .24 earth years", ()=> {
-    colonist.addAge(25);
+    colonist.addAge(20);
     colonist.ageMerc();
-    expect(colonist.mercuryAge).toBe(104.17)
+    expect(colonist.mercuryAge).toBe(83.33)
   });
 
   test("should determine age on Venus based on year length of .62 earth years", ()=> {
@@ -46,4 +46,13 @@ describe('Astronaut', () => {
     colonist.lifeRemain();
     expect(colonist.expectAge).toBe(40);
   });
+
+  test("should return remaining life in Mercury years", ()=> {
+    let tempAge = [];
+    colonist.addAge(20); 
+    colonist.addDemo("male", "AF");
+    colonist.lifeRemain();
+    tempAge = colonist.planetRemain();
+    expect(tempAge).toBe([83.34,32.26,10.64,1.68]);
+  })
 });
