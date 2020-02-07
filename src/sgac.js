@@ -32,6 +32,10 @@ export class Astronaut {
     let newAge = this.age/11.86;
     this.jupiterAge = parseFloat(newAge.toFixed(2));
   }
+
+  addDemo(){
+    
+  }
   //lifeRemain
   //bonusYears
 }
