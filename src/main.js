@@ -35,7 +35,7 @@ $(document).ready(function(){
       $(".deaths").append("<li>You have "+death[4]+" years left on Jupiter</li>");
     } else {
       $(".deaths").show();
-      let death = user.bonusYears();
+      const death = user.bonusYears();
       $(".deaths").append("<li>You should have died "+death[0]+" years ago on Earth</li>");
       $(".deaths").append("<li>You should have died "+death[1]+" years ago on Mercury</li>");
       $(".deaths").append("<li>You should have died "+death[2]+" years ago on Venus</li>");
