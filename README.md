@@ -55,9 +55,6 @@ _Please visit the [Node.js website](https://nodejs.org/en/download/) for install
 
 
 Following this, you may choose to open/view one or all of the documents within to test my project.
-## Known Bugs
-
-_ _
 
 ## Technologies Used
 
